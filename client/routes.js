@@ -4,7 +4,7 @@ import Main from './Main';
 
 class Routes extends Component {
   render() {
-    return <Route path="/" component={Main} />;
+    return <Route exact path="/" component={Main} />;
   }
 }
 

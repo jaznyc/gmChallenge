@@ -11,15 +11,38 @@
     "history": "^5.0.0",
     "morgan": "^1.10.0",
     "pg": "^8.5.1",
-    "react": "^17.0.2",
-    "react-dom": "^17.0.2",
+    "pg-hstore": "^2.3.3",
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1",
     "react-router-dom": "^5.2.0",
-    "sequelize": "^6.6.2"
+    "sequelize": "^6.6.2",
+    "webpack-node-externals": "^2.5.2"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "@babel/core": "^7.4.3",
+    "@babel/plugin-proposal-class-properties": "7.4.0",
+    "@babel/plugin-proposal-decorators": "7.4.0",
+    "@babel/plugin-proposal-export-namespace-from": "7.2.0",
+    "@babel/plugin-proposal-function-sent": "7.2.0",
+    "@babel/plugin-proposal-json-strings": "7.2.0",
+    "@babel/plugin-proposal-numeric-separator": "7.2.0",
+    "@babel/plugin-proposal-throw-expressions": "7.2.0",
+    "@babel/plugin-syntax-dynamic-import": "7.2.0",
+    "@babel/plugin-syntax-import-meta": "7.2.0",
+    "@babel/polyfill": "^7.4.3",
+    "@babel/preset-env": "^7.4.3",
+    "@babel/preset-react": "^7.0.0",
+    "@babel/register": "^7.4.0",
+    "babel-eslint": "^10.0.1",
+    "babel-loader": "^8.0.5",
+    "nodemon": "^1.18.3",
+    "webpack": "^4.16.4",
+    "webpack-cli": "^3.1.0"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node server"
+    "start": "node server",
+    "start-dev": "webpack -w & nodemon server"
   },
   "repository": {
     "type": "git",

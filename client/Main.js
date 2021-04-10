@@ -1,9 +1,7 @@
 import React, { Component } from 'react';
 
-class Main extends Component {
-  render() {
-    <h1>This is the main page</h1>;
-  }
-}
+const Main = () => {
+  return <h1>This is a Test</h1>;
+};
 
 export default Main;
