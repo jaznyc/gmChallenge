@@ -1,7 +1,23 @@
+import axios from 'axios';
 import React, { Component } from 'react';
 
-const Main = () => {
-  return <h1>This is a Test</h1>;
-};
+class Main extends Component {
+  constructor() {
+    super();
+  }
+
+  async componentDidMount() {
+    let { data } = await axios.get('/api/timesheet');
+    console.log('data', data);
+  }
+
+  render() {
+    return (
+      <div>
+        <h3>This is the appppp</h3>
+      </div>
+    );
+  }
+}
 
 export default Main;
