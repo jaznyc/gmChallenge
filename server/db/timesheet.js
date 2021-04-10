@@ -76,3 +76,5 @@ const Timesheet = db.define('timesheet', {
     allowNull: true,
   },
 });
+
+module.exports = Timesheet;
