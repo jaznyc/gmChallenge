@@ -13,6 +13,17 @@ router.get('/', async (req, res, next) => {
   }
 });
 
+router.post('/', async (req, res, next) => {
+  try {
+    console.log('poooooost');
+    console.log('req.body', req.body);
+    const newEntry = await Timesheet.create(req.body);
+    res.json(newEntry);
+  } catch (err) {
+    next(err);
+  }
+});
+
 const collapseData = (entriesArr) => {
   let dataObj = {};
   for (let i = 0; i < entriesArr.length; i++) {
