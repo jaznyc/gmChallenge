@@ -15,7 +15,6 @@ class Main extends Component {
   async componentDidMount() {
     try {
       let { data } = await axios.get('/api/timesheet');
-      console.log('data', data);
       this.setState({ timesheet: data });
     } catch (err) {
       console.eror('Error in get all timesheets', err.message);
