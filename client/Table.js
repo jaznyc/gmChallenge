@@ -5,11 +5,11 @@ const Table = (props) => {
     <table>
       <tbody>
         <tr>
-          <th>ProjectName</th>
-          <th>ClientName</th>
+          <th>Name</th>
+          <th>Client</th>
           <th>Hours</th>
-          <th>BillableHours</th>
-          <th>BillableAmount</th>
+          <th>Billable Hours</th>
+          <th>Billable Amount</th>
         </tr>
 
         {props.timesheet ? (

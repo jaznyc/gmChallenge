@@ -1,6 +1,7 @@
 import axios from 'axios';
 import React, { Component } from 'react';
 import Table from './Table';
+import { Link } from 'react-router-dom';
 
 class Main extends Component {
   constructor() {
@@ -21,6 +22,9 @@ class Main extends Component {
     return (
       <div>
         <h1>Timesheet Entries by Project</h1>
+        <Link to="/form">
+          <button>Create New Entry</button>
+        </Link>
         <Table timesheet={this.state.timesheet} />
       </div>
     );
