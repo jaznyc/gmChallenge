@@ -1,4 +1,138 @@
 body {
   background-color: whitesmoke;
   color: #130303;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+button {
+  color: white;
+  background-color: #1f7a8c;
+  padding: 1em 2em;
+  border: none;
+  font-size: 1em;
+  /* transition: all 1s ease; */
+  outline: none;
+  letter-spacing: 0.1em;
+  border-radius: 5px 5px 5px 5px;
+}
+
+button:hover {
+  background-color: #6fabc2;
+  /* color: #495057; */
+}
+
+/* Main Page Styling */
+#mainPage {
+  display: flex;
+  flex-direction: column;
+}
+#mainTitle {
+  display: flex;
+  justify-content: center;
+}
+#totals {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10vh;
+  /* border: 5px solid red; */
+}
+#button {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.gray {
+  color: #757575;
+}
+.darkGray {
+  color: #495057;
+}
+/* Form Styling */
+form div {
+  display: flex;
+  margin: 1em;
+  display: inline-block;
+  flex-direction: column;
+}
+form input {
+  padding: 0.3em;
+  margin: 0.5em 0;
+  font-size: 0.7em;
+  background-color: #f8f9fa;
+}
+
+#formPage {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  /* border: 5px solid red; */
+}
+
+#formTitle {
+  display: flex;
+  justify-content: center;
+  /* border: 5px solid green; */
+}
+#formBlock {
+  display: flex;
+  flex-direction: column;
+  background-color: #f4f3ee;
+  padding: 10vh;
+  border: 2px solid black;
+  padding-left: 1em;
+  padding-right: 1em;
+  margin-left: 2em;
+  margin-right: 2em;
+  margin-top: 2em;
+}
+#return {
+  display: flex;
+  justify-content: center;
+  padding: 20vh;
+}
+/* Table Styling */
+#table {
+  display: flex;
+  justify-content: center;
+  margin-top: 5vh;
+}
+.right {
+  text-align: right;
+}
+.left {
+  text-align: left;
+}
+table {
+  border-collapse: collapse;
+}
+tbody th:nth-child(1) {
+  width: 40vw;
+}
+tbody th:nth-child(2) {
+  width: 20vw;
+}
+tbody th:nth-child(3) {
+  width: 10vw;
+}
+tbody th:nth-child(4) {
+  width: 15vw;
+}
+tbody th:nth-child(5) {
+  width: 15vw;
+}
+
+th {
+  border: 1px solid gray;
+  background-color: #dee2e6;
+  margin: 2em;
+  padding: 0.5em;
+  font-size: 10px;
+  color: #343a40;
+}
+td {
+  border-bottom: 1px solid #343a40;
+  font-size: 12px;
+  padding: 0.5em;
+}
+.blueText {
+  color: #274c77;
 }
