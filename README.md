@@ -1,7 +1,7 @@
 # gmChallenge
 
-This app was built using a MacOS build Evnironment
-Database commands are for postgreSQL
+- This app was built using a MacOS build Evnironment
+- Database commands are for postgreSQL
 
 # Getting Started
 
